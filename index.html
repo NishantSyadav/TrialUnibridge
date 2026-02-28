@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UniBridge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <h2>UniBridge</h2>
+    <div>
+        <a href="#events">Events</a>
+        <a href="#notes">Notes</a>
+        <span id="profileIcon">👤</span>
+        <button onclick="logout()">Logout</button>
+    </div>
+</nav>
+
+<section class="hero">
+    <h1>Welcome to UniBridge</h1>
+    <p>Connect • Learn • Grow</p>
+</section>
+
+<section id="events">
+    <h2>Events</h2>
+    <div class="card">Hackathon 2026</div>
+    <div class="card">Web Dev Workshop</div>
+</section>
+
+<section id="notes">
+    <h2>Notes</h2>
+    <input type="text" id="noteInput" placeholder="Write a note">
+    <button onclick="addNote()">Add Note</button>
+    <div id="notesContainer"></div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
